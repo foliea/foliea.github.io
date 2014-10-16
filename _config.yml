@@ -1,0 +1,32 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Adrien Folie
+tagline:          'Software Engineer'
+description:      'Software Engineer, passionate about new technology'
+url:              http://blog.foliea.io
+baseurl:          /
+rooturl:          http://www.foliea.io
+resumeurl:        http://www.foliea.io/pages/resume
+
+author:
+  name:           'Adrien Folie'
+  url:            http://www.foliea.io
+
+paginate:         5
+
+# Custom vars
+version:          0.1.0
+
+github:
+  repo:           https://github.com/folieadrien/folieadrien.github.io
+  handle:         https://github.com/folieadrien
+  
+twitter:
+  handle:         https://twitter.com/folie_a
