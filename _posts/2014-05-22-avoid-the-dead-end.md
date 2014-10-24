@@ -8,7 +8,7 @@ programming in 2008. Despite that, I feel that I still have a lot to learn.
 In my current work, I am working mostly with old technologies. I am also working
 alone, with just a product manager who verify that we are focussing on business
 needs. I don't have time to make things in the best way I can. Iterations are
-really quick and business guys of the company are pressuring me to deliver their 
+really quick and business guys of the company are pressuring me to deliver their
 needs faster than it's humanly possible to do it properly. 
 
 I am working a lot more at home to keep learning things and compensate. I am
