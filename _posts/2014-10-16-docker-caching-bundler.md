@@ -5,22 +5,32 @@ title: Caching bundler when building a ruby/rails app's image with docker
 
 **Docker caching mechanism**
 
-Docker has an automatic caching mechanism to greatly speed things up after the first build of a Dockerfile. Each step (each docker instruction of the file) is cached separately. If you change a docker instruction, Docker will pull the results out of the cache of its previous step. It can be really handy, especially if your building ruby from sources or have a lot of huge dependencies like Nokogiri and co.
+Docker has an automatic caching mechanism to greatly speed things up after the 
+first build of a Dockerfile. Each step (each docker instruction of the file) is
+cached separately. If you change a docker instruction, Docker will pull the
+results out of the cache of its previous step. It can be really handy,
+especially if your building ruby from sources or have a lot of huge dependencies
+like Nokogiri.
 
 **Bundler caveat**
 
 With a Rails app, an obvious caveat appears right after a few rebuild of an image: 
 
-You have to sit and wait for Bundler to finish installing every dependencies, even if the Gemfile/Gemfile.lock hasn't changed at all.
+You have to sit and wait for Bundler to finish installing every dependencies,
+even if the Gemfile/Gemfile.lock hasn't changed at all.
 
-It's not a viable solution to keep it like this, Bundler can take a lot of time, and for example, if
-you run your test suite inside a container, and your are developing a new test, you will need to rebuild the image very often, waiting nervously in your desk that Bundler finished its job.
+It's not a viable solution to keep it like this, Bundler can take a lot of
+time, and for example, if you run your test suite inside a container, and your
+are developing a new test, you will need to rebuild the image very often,
+waiting nervously in front of your desk that Bundler finished its job.
 
 **How can we cache the bundle install step?**
 
-It's pretty simple to use docker's automatic caching mechanism to cache the bundle install.
+It's pretty simple to use docker's automatic caching mechanism to cache the
+bundle install.
 
-We will start with this Dockerfile based on the official language stack repository who add the whole Rails app inside the image:
+We will start with this Dockerfile based on the official language stack
+repository who add the whole Rails app inside the image:
 
 ```
 FROM ruby:2.1.2
@@ -66,7 +76,8 @@ COPY . /rails
 WORKDIR /rails
 ```
 
-Now, the rebuild of this image won't run Bundler again if you modify a file in your app, unless
-your are changing something in either the Gemfile or Gemfile.lock (or the Dockerfile itself).
+Now, the rebuild of this image won't run Bundler again if you modify a file in
+your app, unless your are changing something in either the Gemfile or
+Gemfile.lock (or the Dockerfile itself).
 
 Happy hacking!
