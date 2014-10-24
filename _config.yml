@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink:           pretty
 relative_permalinks: true
 
 # Setup
@@ -28,5 +28,4 @@ github:
   repo:           https://github.com/folieadrien/folieadrien.github.io
   handle:         https://github.com/folieadrien
   
-twitter:
-  handle:         https://twitter.com/folie_a
+twitter:          https://twitter.com/folie_a

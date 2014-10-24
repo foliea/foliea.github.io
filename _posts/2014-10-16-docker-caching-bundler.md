@@ -11,7 +11,7 @@ Docker has an automatic caching mechanism to greatly speed things up after the f
 
 With a Rails app, an obvious caveat appears right after a few rebuild of an image: 
 
-You have to sit and wait for Bundler to finish installing every dependencies, even if the Gemfile/Gemfile.lock haven't changed at all.
+You have to sit and wait for Bundler to finish installing every dependencies, even if the Gemfile/Gemfile.lock hasn't changed at all.
 
 It's not a viable solution to keep it like this, Bundler can take a lot of time, and example, if
 you run your test suite inside a container, and your are developing a new test, you will need to rebuild the image very often, waiting nervously in your desk that Bundler finished its job.
