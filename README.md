@@ -1,3 +1,3 @@
 ## foliea.io
 
-My personnal blog with `jekyll`.
+My personal blog with `jekyll`.
