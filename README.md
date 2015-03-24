@@ -1,3 +1,3 @@
-## folieadrien.github.io
+## foliea.github.io
 
 My personal blog with `jekyll`.
