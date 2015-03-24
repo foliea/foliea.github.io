@@ -16,12 +16,12 @@ baseurl:          /
 author:
   name:           'Adrien Folie'
   url:            http://www.foliea.io
-  github:         https://github.com/folieadrien
-  twitter:        https://twitter.com/folie_a
+  github:         https://github.com/foliea
+  twitter:        https://twitter.com/foliea
 
 paginate:         5
 
 # Custom vars
 version:          0.1.0
 
-github:           https://github.com/folieadrien/folieadrien.github.io
+github:           https://github.com/foliea/foliea.github.io
