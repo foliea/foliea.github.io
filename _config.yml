@@ -4,6 +4,7 @@ highlighter:      pygments
 
 # Setup
 title:            Adrien Folie
+time:             2016
 tagline:          'Software Engineer'
 description:      'Software Engineer, passionate about new technology'
 url:              http://foliea.github.io/
