@@ -2,22 +2,18 @@
 markdown:         redcarpet
 highlighter:      pygments
 
-# Permalinks
-permalink:           pretty
-relative_permalinks: true
-
 # Setup
 title:            Adrien Folie
 tagline:          'Software Engineer'
 description:      'Software Engineer, passionate about new technology'
-url:              http://blog.foliea.io
+url:              http://foliea.github.io/
 baseurl:          /
 
 author:
   name:           'Adrien Folie'
-  url:            http://www.foliea.io
+  url:            http://foliea.com
   github:         https://github.com/foliea
-  twitter:        https://twitter.com/foliea
+  twitter:        https://twitter.com/folieadrien
 
 paginate:         5
 
